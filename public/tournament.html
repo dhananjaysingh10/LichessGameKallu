@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            height: 30px;
+        }
+        .navbar a {
+                color: #fff;
+                font-size: 20px;
+                margin: 0 10px;
+                cursor: pointer;
+        }
+        .navbar a:hover {
+                color: #ee00ff; 
+        }
+        h1{
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 70px;
+        font-style: normal;
+        text-align: center;
+        }
+        table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 4%;
+        margin-top: 0px;
+
+        
+        }
+        a{
+            text-decoration: inherit;
+            color: blue;
+            
+        }
+        th, td {
+        border: 5px solid black;
+        padding: 8px;
+       
+        
+        
+        text-align: center;
+        
+        
+        }
+        th {
+        background-color: #eaeaea;
+        font-size :xx-large;
+        color: red;
+        }
+        #table1{
+            font-size: 20px;
+            font-weight: 600;
+            
+        }
+        h4{
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-size: 50px;
+            font-style: normal;
+            text-align: center;
+        }
+        #table2{
+            font-size: 15px;
+            font-weight: 700;
+
+        }
+        .winner{
+            font-weight: 700;
+
+        }
+        .navbar {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+                color: #fff;
+                font-size: 20px;
+                margin: 0 10px;
+                cursor: pointer;
+        }
+        .navbar a:hover {
+                color: #ee00ff; 
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 35px;
+            }
+            table {
+                width: 100%;
+                margin: 1%;
+            }
+            th, td {
+                font-size: 10px;
+                padding: 3px;
+            }
+            h4 {
+                font-size: 30px;
+            }
+            .navbar {
+                justify-content: space-between;
+                width: 105%;
+            }
+            .navbar a {
+                margin: 0 6px;
+                font-size: medium;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar" >
+        <a href="/">Home</a>
+        <a href="/adduser">Add User</a>
+        <a href="/creategame">Create Game</a>
+        <a href="/tournament">Leaderboard</a>
+    </div>
+    <h1 class="playfair-display">TOURNAMENT LEADERBOARD</h1>
+    
+    <table id="table1">
+        <thead>
+            <tr>
+            <th class="columnHeading">Sno</th>
+            <th class="columnHeading normall">ID</th>
+            <th class="columnHeading">Points</th>
+            
+            
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+      <h4 class="playfair-display">RECENT TOURNAMENTS </h4>
+      <table id="table2">
+        <thead>
+            <tr>
+            <th class="columnHeading">Sno.</th>
+            <th class="columnHeading normall">Tournament Name</th>
+            <th class="columnHeading">First</th>
+            <th class="columnHeading">Second</th>
+            <th class="columnHeading">Third</th>
+            
+            
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script src="script3.js"></script>
+</body>
+
+</html>
